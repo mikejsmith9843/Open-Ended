@@ -1,7 +1,7 @@
 {
     "name": "group-project-3",
     "version": "0.1.0",
-    "private":"true",
+    "private": "true",
     "proxy": "http://localhost:3001",
     "dependencies": {
         "@apollo/client": "3.11.1",
@@ -10,7 +10,7 @@
         "@testing-library/user-event": "14.5.2",
         "bootstrap": "5.3.3",
         "graphql": "16.9.0",
-        "jwt-decode": "4.0.0",
+        "jwt-decode": "^4.0.0",
         "moment": "2.30.1",
         "react": "18.3.1",
         "react-big-calendar": "1.13.1",
@@ -22,24 +22,24 @@
         "react-scripts": "5.0.1"
     },
     "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }

@@ -5,7 +5,7 @@ import { FIND_ME } from '../utils/queries';
 
 const TestPage = () => {
     const { data: accountData, loading: accountLoading, error: accountError } = useQuery(FIND_ME);
-    if (accountErorr) {
+    if (accountError) {
         console.log(accountError.message)
     }
 

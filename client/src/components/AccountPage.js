@@ -18,7 +18,7 @@ const AccountPage = () => {
 
     if (userLoading || companyLoading) return <p className='text-center my-5'>Loading User Data...</p>;
 
-    if (userrError) return <p className='text-center my-5'>Error loading User Data: <em>{userError.message}</em></p>;
+    if (userError) return <p className='text-center my-5'>Error loading User Data: <em>{userError.message}</em></p>;
 
     const { user } = userData.me;
     const { company } = companyData
