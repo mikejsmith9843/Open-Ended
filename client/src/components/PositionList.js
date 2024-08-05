@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PositionForm from './forms/PositionForm';
+import PositionForm from './forms/PostionForm';
 import Position from './partials/Position';
 import { useQuery } from '@apollo/client';
 import { FIND_ALL_POSITIONS } from '../utils/queries';
