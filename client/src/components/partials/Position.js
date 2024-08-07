@@ -1,7 +1,7 @@
 import React from 'react';
 import DummyPosition from './DummyPosition';
 import { FaPencil, FaX } from "react-icons/fa6";
-import PositionForm from '../forms/PositionForm';
+import PositionForm from '../forms/Position';
 import { useMutation } from '@apollo/client';
 import { DELETE_POSITION } from '../../utils/mutations';
 
