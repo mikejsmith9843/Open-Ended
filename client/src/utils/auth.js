@@ -1,44 +1,50 @@
-import decode from 'jwt-decode';
+// import { jwtDecode } from "jwt-decode";
 
-class AuthService {
-  getProfile() {
-    return decode(this.getToken());
-  }
+// const token = "eyJ0eXAiO.../// jwt token";
+// const decoded = jwtDecode(token);
 
-  loggedIn() {
-    const token = this.getToken();
-    return token && !this.isTokenExpired(token) ? true : false;
-  }
+// console.log(decoded);
 
-  hasUser() {
-    return decode(this.getToken()).data?.userId ? true : false;
-  }
 
-  hasCompany() {
-    return decode(this.getToken()).data?.companyId ? true : false;
-  }
+// class AuthService {
+//   getProfile() {
+//     return jwtDecode(this.getToken());
+//   }
 
-  isTokenExpired(token) {
-    const decoded = decode(token);
-    if (decoded.exp < Date.now() / 1000) {
-      localStorage.removeItem('id_token');
-      return true;
-    }
-    return false;
-  }
+//   loggedIn() {
+//     const token = this.getToken();
+//     return token && !this.isTokenExpired(token) ? true : false;
+//   }
 
-  getToken() {
-    return localStorage.getItem('id_token');
-  }
+//   hasUser() {
+//     return jwtDecode(this.getToken()).data?.userId ? true : false;
+//   }
 
-  login(idToken) {
-    localStorage.setItem('id_token', idToken);
-    window.location.assign('/account');
-  }
+//   hasCompany() {
+//     return jwtDecode(this.getToken()).data?.companyId ? true : false;
+//   }
 
-  logout() {
-    localStorage.removeItem('id_token');
-  }
-}
+//   isTokenExpired(token) {
+//     const decoded = jwtDecode(token);
+//     if (decoded.exp < Date.now() / 1000) {
+//       localStorage.removeItem('id_token');
+//       return true;
+//     }
+//     return false;
+//   }
 
-export default new AuthService();
+//   getToken() {
+//     return localStorage.getItem('id_token');
+//   }
+
+//   login(idToken) {
+//     localStorage.setItem('id_token', idToken);
+//     window.location.assign('/account');
+//   }
+
+//   logout() {
+//     localStorage.removeItem('id_token');
+//   }
+// }
+
+// export default new AuthService();
