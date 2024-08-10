@@ -13,7 +13,7 @@ async function seedDb() {
 
         const fakeCompanies = Array.from({ length: 5 }, () => ({
             companyName: faker.company.name(),
-            companyPhone: faker.phone.number('512-###-####'),
+            companyPhone: faker.phone.number(),
             companyAddress: {
                 street1: faker.location.streetAddress(),
                 city: faker.location.city(),
@@ -45,7 +45,7 @@ async function seedDb() {
         const fakeUsers = Array.from({ length: 50 }, () => ({
             firstName: faker.person.firstName(),
             lastName: faker.person.lastName(),
-            phone: faker.phone.number('512-###-####'),
+            phone: faker.phone.number(),
             hireDate: moment(faker.date.past()).format('YYYY-MM-DD'),
             payRate: faker.number.octal({ min: 20000, max: 150000 }),
             fullTime: faker.datatype.boolean(),
@@ -114,7 +114,7 @@ async function seedDb() {
 
 async function connectAndSeed() {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/userDb', {
+        await mongoose.connect('mongodb://localhost:27017/', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
