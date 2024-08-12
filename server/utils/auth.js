@@ -30,10 +30,10 @@ module.exports = {
         //next endpoint
         return req;
     },
-    signToken: function ({ email, _is, user }) {
+    signToken: function ({ email, _id, user }) {
         const payload = {
             email,
-            accountId: __id,
+            accountId: _id,
             userId: user?.__id,
             isAdmin: user?.isAdmin,
             companyId: user?.userCompany?.__id,
