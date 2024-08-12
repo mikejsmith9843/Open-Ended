@@ -114,7 +114,7 @@ const resolvers = {
         return {
           token,
           account,
-          userId: account.user,
+          userId: account.user?._id,
           companyId: account.user?.userCompany?._id,
           isAdmin: account.user?.isAdmin
         };
