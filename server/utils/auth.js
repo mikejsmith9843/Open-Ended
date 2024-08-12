@@ -21,7 +21,7 @@ module.exports = {
 
         //Verify token and get user data out of it
         try {
-            const { data } = jwit.verify(token, secret, { maxAge: expiration });
+            const { data } = jwt.verify(token, secret, { maxAge: expiration });
             req.acoount = data;
         } catch (err) {
             console.log(`Auth Error: ${err.message}`);
@@ -39,6 +39,6 @@ module.exports = {
             companyId: user?.userCompany?.__id,
         };
 
-        return jwit.sign({ data: payload }, secret, { expiresIn: expiration });
+        return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
     },
 };
