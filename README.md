@@ -17,6 +17,9 @@ My intention with Open Ended was to try our hand at creating a modern CRM platfo
 ## Live URL
 
 ## Screenshots
+![Open Ended - Google Chrome 8_13_2024 6_18_29 PM](https://github.com/user-attachments/assets/0a4108a7-bce0-4b20-b867-461a2803c466)
+![Open Ended - Google Chrome 8_13_2024 6_18_46 PM](https://github.com/user-attachments/assets/0eff4436-bd11-4faa-b045-86f486d76e87)
+![Open Ended - Google Chrome 8_13_2024 6_18_56 PM](https://github.com/user-attachments/assets/7c8a6181-702b-41f4-bfe8-d662894ec575)
 
 
 ## Tech Used
